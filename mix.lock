@@ -1,7 +1,9 @@
 %{"cowlib": {:hex, :cowlib, "1.3.0"},
+  "extwitter": {:git, "https://github.com/knewter/extwitter.git", "d42417ba7a90a80358af68310ee59cec6df9c5a7", []},
   "gproc": {:hex, :gproc, "0.5.0"},
   "gun": {:hex, :gun, "1.0.0-pre.1"},
   "hedwig": {:hex, :hedwig, "1.0.0-rc3"},
-  "hedwig_slack": {:git, "https://github.com/hedwig-im/hedwig_slack.git", "a57b9bdd7a1bb50a465a89a7556121fe2e8e421d", []},
+  "hedwig_slack": {:git, "https://github.com/hedwig-im/hedwig_slack.git", "fa34300cff64ec57cdbd358455243584144c3158", []},
+  "oauth": {:git, "https://github.com/tim/erlang-oauth.git", "cd31addc828179983564fd57738f1680a4a4d1ff", []},
   "poison": {:hex, :poison, "2.1.0"},
   "ranch": {:hex, :ranch, "1.1.0"}}

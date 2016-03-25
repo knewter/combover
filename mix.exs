@@ -14,7 +14,7 @@ defmodule Combover.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :hedwig_slack, :sasl],
+    [applications: [:logger, :hedwig_slack, :sasl, :extwitter],
      mod: {Combover, []}]
   end
 
@@ -29,7 +29,8 @@ defmodule Combover.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:hedwig_slack, github: "hedwig-im/hedwig_slack"}
+      {:hedwig_slack, github: "hedwig-im/hedwig_slack"},
+      {:extwitter, github: "knewter/extwitter"} # NOTE: I'm just using my fork to get around some dependency issues, this shouldn't happen in the future.
     ]
   end
 end

@@ -11,8 +11,16 @@ config :combover, Combover.Robot,
     {Hedwig.Responders.Help, []},
     {Hedwig.Responders.Panzy, []},
     {Hedwig.Responders.GreatSuccess, []},
-    {Hedwig.Responders.ShipIt, []}
+    {Hedwig.Responders.ShipIt, []},
+    {Combover.Responders.Twitter, []}
   ]
+
+config :extwitter, :oauth, [
+   consumer_key: System.get_env("TWITTER_CONSUMER_KEY"),
+   consumer_secret: System.get_env("TWITTER_CONSUMER_SECRET"),
+   access_token: System.get_env("TWITTER_ACCESS_TOKEN"),
+   access_token_secret: System.get_env("TWITTER_ACCESS_TOKEN_SECRET")
+]
 
 
 # This configuration is loaded before any dependency and is restricted

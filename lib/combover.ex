@@ -9,7 +9,8 @@ defmodule Combover do
     children = [
       # Define workers and child supervisors to be supervised
       # worker(Combover.Worker, [arg1, arg2, arg3]),
-      worker(Combover.Robot, [])
+      worker(Combover.Robot, []),
+      worker(Combover.TwitterUsers, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
